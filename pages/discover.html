@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover - Skinora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/mobile-menu.js"></script>
+  </head>
+  <body class="font-serif bg-white text-gray-900">
+    <!-- 移动端菜单按钮 -->
+    <div class="md:hidden fixed top-4 right-4 z-50">
+      <button id="menuButton" class="p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 移动端菜单 -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-40 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+      <div class="p-8">
+        <div class="flex justify-between items-center mb-8">
+          <h1 class="text-xl font-bold italic">Skinora Beauty</h1>
+          <button id="closeMenu" class="p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6">
+              <path d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-4 text-lg">
+          <a href="find.html" class="hover:text-[#E76F5F]">Find Brand</a>
+          <a href="service.html" class="hover:text-[#E76F5F]">Service & Event</a>
+          <a href="discover.html" class="hover:text-[#E76F5F]">Discover</a>
+          <a href="login.html" class="hover:text-[#E76F5F]">Login</a>
+          <a href="signup.html" class="hover:text-[#E76F5F]">Sign Up</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="flex items-center justify-between px-4 md:px-8 py-4 border-b">
+      <h1 class="text-xl font-bold italic"><a href="../index.html">Skinora Beauty</a></h1>
+      <nav class="hidden md:flex space-x-8 font-semibold">
+        <a href="find.html" class="hover:underline">Find Brand</a>
+        <a href="service.html" class="hover:underline">Service & Event</a>
+        <a href="discover.html" class="hover:underline">Discover</a>
+      </nav>
+      <div class="space-x-4 text-lg text-[#E76F5F]">
+        <!-- 搜索 -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 inline">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+
+        <!-- 购物车 -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 inline">
+          <circle cx="9" cy="21" r="1" />
+          <circle cx="20" cy="21" r="1" />
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+        </svg>
+        <!-- 用户 -->
+        <a href="login.html" class="hidden md:inline">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 inline">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Page Title and Breadcrumb -->
+    <section class="px-4 md:px-8 py-6">
+      <p class="text-sm"><a href="../index.html" class="text-gray-500 hover:underline">Home</a> <span class="text-gray-300">/</span> <span class="text-gray-400">Discover</span></p>
+      <h2 class="text-2xl md:text-3xl font-bold mt-2">Discover</h2>
+    </section>
+
+    <!-- Categories -->
+    <section class="px-4 md:px-8 py-8">
+      <h3 class="text-xl md:text-2xl font-semibold mb-6 text-center md:text-left">Categories</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+        <!-- Category 1 -->
+        <div class="text-center">
+          <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-red-300 overflow-hidden mx-auto">
+            <img src="../images/makeup.jpg" alt="Makeup" class="object-cover w-full h-full" />
+          </div>
+          <span class="mt-2 text-sm font-semibold block">Makeup</span>
+        </div>
+        <!-- Category 2 -->
+        <div class="text-center">
+          <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-red-300 overflow-hidden mx-auto">
+            <img src="../images/skin.jpg" alt="Skin" class="object-cover w-full h-full" />
+          </div>
+          <span class="mt-2 text-sm font-semibold block">Skin</span>
+        </div>
+        <!-- Category 3 -->
+        <div class="text-center">
+          <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-red-300 overflow-hidden mx-auto">
+            <img src="../images/hair.jpg" alt="Hair" class="object-cover w-full h-full" />
+          </div>
+          <span class="mt-2 text-sm font-semibold block">Hair</span>
+        </div>
+        <!-- Category 4 -->
+        <div class="text-center">
+          <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-red-300 overflow-hidden mx-auto">
+            <img src="../images/bodycare.jpg" alt="Body Care" class="object-cover w-full h-full" />
+          </div>
+          <span class="mt-2 text-sm font-semibold block">Body Care</span>
+        </div>
+        <!-- Category 5 -->
+        <div class="text-center">
+          <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-red-300 overflow-hidden mx-auto">
+            <img src="../images/fragrance.jpg" alt="Fragrance" class="object-cover w-full h-full" />
+          </div>
+          <span class="mt-2 text-sm font-semibold block">Fragrance</span>
+        </div>
+        <!-- Category 6 -->
+        <div class="text-center">
+          <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-red-300 overflow-hidden mx-auto">
+            <img src="../images/Tools.jpg" alt="Tools" class="object-cover w-full h-full" />
+          </div>
+          <span class="mt-2 text-sm font-semibold block">Tools</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Items -->
+    <section class="px-4 md:px-8 py-8 bg-gray-50">
+      <h3 class="text-xl md:text-2xl font-semibold mb-6 text-center md:text-left">Featured Items</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Item 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="../images/discover1.jpg" alt="Featured Item 1" class="w-full h-48 object-cover rounded mb-4" />
+          <h4 class="font-bold text-lg mb-2">Luxury Skincare Set</h4>
+          <p class="text-sm text-gray-600 mb-4">Complete your skincare routine with our premium collection</p>
+          <a href="#" class="inline-block px-4 py-2 border border-[#E76F5F] text-[#E76F5F] hover:bg-red-100 rounded-full">Shop Now</a>
+        </div>
+        <!-- Item 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="../images/discover2.jpg" alt="Featured Item 2" class="w-full h-48 object-cover rounded mb-4" />
+          <h4 class="font-bold text-lg mb-2">Makeup Essentials</h4>
+          <p class="text-sm text-gray-600 mb-4">Professional makeup kit for every occasion</p>
+          <a href="#" class="inline-block px-4 py-2 border border-[#E76F5F] text-[#E76F5F] hover:bg-red-100 rounded-full">Shop Now</a>
+        </div>
+        <!-- Item 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="../images/discover3.jpg" alt="Featured Item 3" class="w-full h-48 object-cover rounded mb-4" />
+          <h4 class="font-bold text-lg mb-2">Hair Care Collection</h4>
+          <p class="text-sm text-gray-600 mb-4">Nourish and protect your hair with our best-selling products</p>
+          <a href="#" class="inline-block px-4 py-2 border border-[#E76F5F] text-[#E76F5F] hover:bg-red-100 rounded-full">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="px-4 md:px-8 py-6 text-sm border-t">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div class="flex flex-wrap justify-center md:justify-start gap-4">
+          <a href="#" class="hover:text-[#E76F5F]">Get Help</a>
+          <a href="#" class="hover:text-[#E76F5F]">Delivery</a>
+          <a href="#" class="hover:text-[#E76F5F]">Returns</a>
+          <a href="#" class="hover:text-[#E76F5F]">Gift Cards</a>
+        </div>
+        <div class="flex items-center space-x-3">
+          <a href="#" class="hover:text-[#E76F5F]">About Us</a>
+          <a href="#" class="text-xl text-black hover:text-blue-600" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 inline">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M15 8h-2a1 1 0 0 0-1 1v2h3l-.5 2h-2.5v6h-2v-6H8v-2h2V9a3 3 0 0 1 3-3h2v2z" />
+            </svg>
+          </a>
+          <a href="#" class="text-xl text-black hover:text-pink-500" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 inline">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17" cy="7" r="1" />
+            </svg>
+          </a>
+          <a href="signup.html" class="underline hover:text-[#E76F5F]">Sign Up</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
